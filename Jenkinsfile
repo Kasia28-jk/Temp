@@ -13,7 +13,7 @@ pipeline
         {
             steps
              {
-             sh "mvn clean compile"
+             bat "mvn clean compile"
             }
         }
 
@@ -21,7 +21,7 @@ pipeline
                 {
                     steps
                      {
-                     sh "mvn test"
+                     bat "mvn test"
                     }
                 }
 
@@ -29,7 +29,7 @@ pipeline
                 {
                     steps
                      {
-                     sh "mvn clean heroku:deploy"
+                     bat "mvn clean heroku:deploy"
                     }
                 }
 
